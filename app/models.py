@@ -79,7 +79,7 @@ class Department(Base):
     __tablename__ = "departments"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
-    code: Mapped[str] = mapped_column(String(20), unique=True)
+    code: Mapped[str] = mapped_column(String(40), unique=True)
     name: Mapped[str] = mapped_column(String(80))
 
 
